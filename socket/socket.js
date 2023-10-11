@@ -10,7 +10,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:3000",
-      "https://shimmering-kataifi-935423.netlify.app",
+      "https://threadclonebackend.onrender.com",
     ],
     // http://localhost:3000 https://shimmering-kataifi-935423.netlify.app
     methods: ["GET", "POST"],
