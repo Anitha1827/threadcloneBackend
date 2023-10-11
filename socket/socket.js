@@ -6,12 +6,10 @@ import Conversation from "../models/conversationModel.js";
 
 const app = express();
 const server = http.createServer(app);
-// const io = new Server(server, {
-
-const io = require("socket.io-client", {
+const io = new Server(server, {
   cors: {
-    origin: "https://shimmering-kataifi-935423.netlify.app",
-    // http://localhost:3000
+    origin: "*",
+    // http://localhost:3000  https://shimmering-kataifi-935423.netlify.app
     methods: ["GET", "POST"],
   },
 });
